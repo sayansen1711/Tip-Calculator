@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <!-- All calculator contents -->
+        <div class="input-section">
+            <!-- User input section -->
+            <!-- Bill input, %age and pepole count will go here -->
+            <div class="form-control">
+                <!-- placeholder for bill amount input -->
+                 <!-- label and input will be paired together as label provides a caption or description for a user interface item  -->
+                 <label for="bill">Bill</label>
+                 <!-- for of label and id of input should be equal: for=id -->
+                 <input type="number" id="bill" class="input-field" placeholder="0" min="0">
+            </div>
+            <!-- end of Bill amount input -->
+            <!-- Tip selection will go here -->
+            <div class="form-control">
+                <!-- tip selection in the form of radio buttons to select %age -->
+                 <span>Select a Tip percentage (%)</span>
+                 <!-- container specifically for buttons -->
+                 <div class="tip-buttons-container">
+                    <!-- Button for 5% tip -->
+                    <button type="button" class="tip-percent-btn" value="5">5%</button>
+                    <!-- Button for 10% tip -->
+                    <button type="button" class="tip-percent-btn" value="10">10%</button>
+                    <!-- Button for 15% tip -->
+                    <button type="button" class="tip-percent-btn" value="15">15%</button>
+                    <!-- Button for 25% tip -->
+                    <button type="button" class="tip-percent-btn" value="25">25%</button>
+                    <!-- Button for 50% tip -->
+                    <button type="button" class="tip-percent-btn" value="50">50%</button>
+                    <!-- custom tip input section appears right next to the tip buttons -->
+                     <input type="number" id="custom-tip" class="input-field tip-custom-input" placeholder="Custom" min="0" max="100">
+                 </div>
+                 <!-- end of tip-buttons-container -->
+            </div>
+            <!-- tip section ends here -->
+            <!-- People count input will go here -->
+            <div class="form-control">
+                <!-- Count of people section -->
+                <label for="num-people">Number of People</label>
+                <!-- minimum value=1 so that negative and 0 value can be avoided -->
+                <input type="number" id="num-people" placeholder="1" class="input-field" min="1">
+            </div>
+            <!-- end of people count section -->
+        </div> 
+        <!-- end of input-section -->
+        <!-- output-section will go here -->
+        <div class="output-section">
+            <!-- Tip amount/person displayed here -->
+             <div class="result-line">
+                <!-- left side labels -->
+                 <div class="result-label">
+                    <p>Tip Amount</p>
+                    <span>/ person</span>
+                 </div>
+                 <!-- Right side calculated value -->
+                 <div class="result-value">
+                    <span id="tip-amount-display">$0.00</span>
+                 </div>
+                 <!-- end of result-value -->
+             </div>
+             <!-- amount / person will be displayed here -->
+             <!-- end of result-line -->
+        </div>
+        <!-- end of output-section -->
+    </div>
+     <!-- end of calculator-container -->
+    <script src="script.js" defer></script>
+</body>
+</html>
