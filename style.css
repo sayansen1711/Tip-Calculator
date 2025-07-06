@@ -18,6 +18,7 @@ body{
     /* box-sizing: :This prevents the input from becoming wider than 100% when padding/border are added */
     box-sizing: border-box;
 }
+/* Appearnce of the input field text */
 label,
 .form-control>span{
     display: block;
@@ -26,6 +27,7 @@ label,
     color: #4B5A6A;
     margin-bottom: 6px;
 }
+/* tip percent button formatting */
 .tip-percent-btn{
     /* Dimension and spacing */
     padding: 10px;
